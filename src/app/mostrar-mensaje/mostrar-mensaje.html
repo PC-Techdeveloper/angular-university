@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1 class="text-info">Event Binding en Angular</h1>
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn btn-primary me-2" (click)="showMessage()">Mostrar mensaje</button>
+    <button class="btn btn-danger" (click)="resetMessage()">Resetear mensaje</button>
+  </div>
+  <div class="alert alert-success mt-4 mx-auto w-50" role="alert">
+    {{message}}
+  </div>
+</div>

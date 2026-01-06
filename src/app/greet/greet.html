@@ -1,0 +1,18 @@
+<section class="text-center text-light">
+  <h2 class="opacity-25">Two Way Data Binding</h2>
+  <div class="d-flex justify-content-center">
+    <div class="w-50">
+      <div class="mb-3">
+        <label>
+          Mensaje:
+          <input type="text" [(ngModel)]="greet" autocomplete="off">
+        </label>
+      </div>
+      <div class="mb-3">
+        <div class="alert alert-light mt-4 mx-auto w-50">
+          {{greet}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

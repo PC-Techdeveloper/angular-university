@@ -1,59 +1,67 @@
-# AppAngular
+# Crear Componentes Inline en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Para crear un componente en Angular CLI, utilizando plantillas, estilos en línea (inline) y escapando la generación de pruebas, utiliza el siguiente parámetro:
 
-## Development server
+- `ng g c component-inline --inline-template --inline-style --skip-test`
 
-To start a local development server, run:
+# Instalación de Bootstrap en Angular (Página Oficial de Bootstrap)
 
-```bash
-ng serve
+Para instalar Bootstrap en Angular, utiliza el siguiente comando:
+
+- `npm install bootstrap@5.3.8 --save`
+
+Añadir en el index.html los siguientes cdn de Bootstrap:
+
+```html
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"
+></script>
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Y por último instalar la extensión de Bootstrap oficial si usas VsCode _Bootstrap Intellisense_.
 
-## Code scaffolding
+# Concepto de interpolación en Angular
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+La interpolación en Angular es una técnica que permite enlazar datos del componente a la vista (plantilla HTML) de manera dinámica. Utilizando la interpolación se puede mostrar datos de propiedades del componente dentro del a plantilla de manera directa. La interpolación se realiza mediante la sintaxis {{...}}, donde se coloca una expresión de Angular dentro de las llaves dobles.
 
-```bash
-ng generate component component-name
-```
+## Uso de varios componentes en Angular
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para utilizar varios componentes en Angular, se crea un componente padre donde incluye varias veces el compnente hijo para que se pueda relacionar el componente hijo con el componente padre.
 
-```bash
-ng generate --help
-```
+# Encapsulamiento de propiedades en TypeScript y Angular
 
-## Building
+En TypeScript y JavaScript, hay una diferencia significativa entre un método que usa la palabra clave `get` para definir un acccesor (`getter`) y un método regular que actúa como parte del encapsulamiento.
 
-To build the project run:
+## Método get (accessor)
 
-```bash
-ng build
-```
+- En typescript permite definir métodos con la palabra clave get, lo que crea un getter.
+- Estos métodos se acceden como si fueran propiedades en lugar de métodos. No necesitan parentesis cuando se usan en una plantilla o al llamarse código.
+- Los getters son útiles para encapsular lógica de acceso sin que el llamador sepa que está llamando a una función.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Método de encapsulamiento
 
-## Running unit tests
+- No usa espacio después de la palabra clave `get` o `set`.
+- Para acceder a este método en la plantilla, se necesita usar la sintaxis `()` para llamar a la función.
+- Es útil para operaciones que necesitan recibir parámetros o realizar cálculos o acciones más complejas.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+# Event Binding en Angular
 
-```bash
-ng test
-```
+Es una técnica que permite enlazar eventos del DOM (Document Object Model) con métodos del componente de Angular. Esto permite que angular ejecute código en respuesta a la interacción del usuario con el componente, como hacer clic en un botón, mover el mouse, escribir en un campo de texto, etc.
 
-## Running end-to-end tests
+# Property Binding
 
-For end-to-end (e2e) testing, run:
+Permite enlazar valores de propiedades del componente a propiedades de elementos HTML. Esto se logra utilizando la sintaxis {{}}. que enlaza la propiedad de un elemento o componente a una expresión de Angular, permitiendo que los cambios en el valor de la propiedad en el componente se refleje automáticamente en el elemento HTML.
 
-```bash
-ng e2e
-```
+# Two way data binding Angular
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Permite que los datos entre el componente y la vista estén sincronizados automáticamente. Esto significa que, si el valor de la vista cambia, el valor en el componente también se actualiza y viceversa.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Importar FormsModule: Es una configuraci+on para poder usar ngModel en componentes Angular.

@@ -1,0 +1,18 @@
+<h2 class="text-center text-warning">Property Binding</h2>
+<div class="d-flex justify-content-center">
+  <div class="w-50">
+    <div class="mb-3">
+      <label>
+        Escribe algo:
+        <input id="inputTexto" type="text" (input)="updateText($event)">
+      </label>
+    </div>
+    <div class="mb-3">
+      <label>
+        Texto replicado:
+        <!-- Property binding -> [value]="text" -->
+        <input id="copyText" type="text" [value]="text" readonly>
+      </label>
+    </div>
+  </div>
+</div>
