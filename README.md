@@ -65,3 +65,5 @@ Permite enlazar valores de propiedades del componente a propiedades de elementos
 Permite que los datos entre el componente y la vista estén sincronizados automáticamente. Esto significa que, si el valor de la vista cambia, el valor en el componente también se actualiza y viceversa.
 
 Importar FormsModule: Es una configuraci+on para poder usar ngModel en componentes Angular.
+
+[*] Continuar con el reto de crear una app calculadora en Angular.
