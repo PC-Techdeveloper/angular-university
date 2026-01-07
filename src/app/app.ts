@@ -8,11 +8,12 @@ import { MostrarMensaje } from './mostrar-mensaje/mostrar-mensaje';
 import { Replicador } from './replicador/replicador';
 import { Greet } from './greet/greet';
 import { FormsModule } from '@angular/forms';
+import { Calculadora } from './calculadora/calculadora';
 
 /* Es recomendable tener todo en un archivo aparte  */
 @Component({
   selector: 'app-root',
-  imports: [Padre, MostrarMensaje, Replicador, Greet, FormsModule],
+  imports: [Padre, MostrarMensaje, Replicador, Greet, FormsModule, Calculadora],
   // template: `
   //   <h1>{{ title }}</h1>
   //   <p>{{description}}</p>
