@@ -1,4 +1,4 @@
-<h1 class="text-center text-warning mt-3">{{title}}</h1>
+<h1 class="text-center text-warning mt-3">{{ title }}</h1>
 
 <div class="container mt-5">
   <div class="d-flex justify-content-center">
@@ -6,19 +6,19 @@
       <div class="mb-3 d-flex align-items-center">
         <label class="form-label me-2 text-nowrap">
           Operando A
-          <input type="number" id="opA" class="form-control text-center" [(ngModel)]="opA">
+          <input type="number" id="opA" class="form-control text-center" [(ngModel)]="opA" />
         </label>
       </div>
 
       <div class="mb-3 d-flex align-items-center">
         <label class="form-label me-2 text-nowrap">
           Operando B
-          <input type="number" id="opB" class="form-control text-center" [(ngModel)]="opB">
+          <input type="number" id="opB" class="form-control text-center" [(ngModel)]="opB" />
         </label>
       </div>
 
       <button class="btn btn-primary mb-3 w-100" (click)="add()">Sumar</button>
-      <p class="text-center">Resultado: {{result}}</p>
+      <p class="text-center">Resultado: {{ result }}</p>
     </div>
   </div>
 </div>
