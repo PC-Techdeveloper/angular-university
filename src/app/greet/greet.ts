@@ -8,5 +8,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './greet.css',
 })
 export class Greet {
-  greet = "Saludo inicial"
+  greet = 'Saludo inicial';
 }
