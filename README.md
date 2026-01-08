@@ -66,4 +66,16 @@ Permite que los datos entre el componente y la vista estén sincronizados autom�
 
 Importar FormsModule: Es una configuraci+on para poder usar ngModel en componentes Angular.
 
-[*] Continuar con el reto de crear una app calculadora en Angular.
+# Directiva en Angular
+
+## @if
+
+- Es una forma de manejar el flujo condicional en las plantillas de Angular. Permite mostrar u ocultar partes de la intefaz de usuario dependiendo de si una condición es verdadera o falsa.
+
+## @for
+
+- Permite iterar sobre colecciones directamente desde la plantilla de HTML. Esta sintaxis es limpia y expresiva, integrándose muy bien con los bloques de control de flujo como @if y @else. La directiva @for permite generar dinámicamente contenido en la plantilla según los elementos de una colección.
+
+# Local reference
+
+Es una referencia que se crea directamente en la plantilla de HTML y permite acceder a un elemento del DOM como un `input, button, etc` dentro de la misma plantilla. Esto es útil para interactuar con elementos del DOM sin necesidad de manipularlos directamente desde el codigo de TypeScript del componente.

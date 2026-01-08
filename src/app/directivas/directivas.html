@@ -1,0 +1,16 @@
+<h1 class="text-center text-warning">Directivas en Angular</h1>
+<h3 class="text-center text-info">Directiva @IF</h3>
+
+<div class="container mt-5 text-center">
+  <h2>Estatus de Autenticación</h2>
+
+  @if (isAuthenticated){
+  <p class="text-success">Estás autenticado</p>
+  } @else {
+  <p class="text-danger">No estas autenticado</p>
+  }
+
+  <button class="btn btn-primary mt-3" (click)="toggleAuthentication()">
+    Alternar Estado de Autenticación
+  </button>
+</div>
