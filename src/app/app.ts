@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
 // import { NewComponent } from './new-component/new-component';
 // import { InlineComponent } from './inline-component/inline-component';
@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { Calculadora } from './calculadora/calculadora';
 import { Directivas } from './directivas/directivas';
 import { AddTask } from './add-task/add-task';
-import { ComponentFor } from "./component-for/component-for";
+import { ComponentFor } from './component-for/component-for';
+import { ProductList } from './product-list/product-list';
 
 /* Es recomendable tener todo en un archivo aparte  */
 @Component({
@@ -25,8 +26,9 @@ import { ComponentFor } from "./component-for/component-for";
     Calculadora,
     Directivas,
     AddTask,
-    ComponentFor
-],
+    ComponentFor,
+    ProductList,
+  ],
   // template: `
   //   <h1>{{ title }}</h1>
   //   <p>{{description}}</p>

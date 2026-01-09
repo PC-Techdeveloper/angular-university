@@ -79,3 +79,11 @@ Importar FormsModule: Es una configuraci+on para poder usar ngModel en component
 # Local reference
 
 Es una referencia que se crea directamente en la plantilla de HTML y permite acceder a un elemento del DOM como un `input, button, etc` dentro de la misma plantilla. Esto es útil para interactuar con elementos del DOM sin necesidad de manipularlos directamente desde el codigo de TypeScript del componente.
+
+# Comunicación entre componentes en Angular (Compartir datos)
+
+## Decorador @input
+Un decorador en Angular es una función especial que se utiliza para añadir metodos a clases, métodos, propiedades o parámetros. Estos metadatos son esenciales para que angular pueda entender como debe manejar y comportarse un elemento especifico en la aplicación.
+
+El decorador @input permite que un componente hijo reciba datos desde su componente padre.
+
