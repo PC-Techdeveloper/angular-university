@@ -13,6 +13,8 @@ import { Directivas } from './directivas/directivas';
 import { AddTask } from './add-task/add-task';
 import { ComponentFor } from './component-for/component-for';
 import { ProductList } from './product-list/product-list';
+import { DecoradorInput } from './decorador-input/decorador-input';
+import { ComponenteHijo } from "./decorador-input/componente-hijo/componente-hijo";
 
 /* Es recomendable tener todo en un archivo aparte  */
 @Component({
@@ -28,7 +30,9 @@ import { ProductList } from './product-list/product-list';
     AddTask,
     ComponentFor,
     ProductList,
-  ],
+    DecoradorInput,
+    ComponenteHijo
+],
   // template: `
   //   <h1>{{ title }}</h1>
   //   <p>{{description}}</p>

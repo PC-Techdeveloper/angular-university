@@ -83,7 +83,11 @@ Es una referencia que se crea directamente en la plantilla de HTML y permite acc
 # Comunicación entre componentes en Angular (Compartir datos)
 
 ## Decorador @input
+
 Un decorador en Angular es una función especial que se utiliza para añadir metodos a clases, métodos, propiedades o parámetros. Estos metadatos son esenciales para que angular pueda entender como debe manejar y comportarse un elemento especifico en la aplicación.
 
 El decorador @input permite que un componente hijo reciba datos desde su componente padre.
 
+## Decorador @output
+
+Se utiliza para enviar datos o eventos desde un componente hijo hacia su componente padre. Funciona mediante la creación de un EventEmitter, que emite un evento cuando ocurre una acción en el componente hijo y el componente padre puede escuchar este evento y reaccionar a el.
