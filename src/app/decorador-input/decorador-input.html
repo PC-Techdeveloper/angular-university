@@ -1,9 +1,14 @@
 <!-- Decorador @Input -->
-<!-- <h1 class="text-center text-danger">{{ title }}</h1>
-<p class="text-center">Componente Padre</p>
+<!-- <p class="text-center">Componente Padre</p>
 <app-componente-hijo [message]="messageInput" /> -->
 
 <!-- Decorador @Output -->
 <section class="container">
-  aquí va el componente hijo
+  <h1 class="text-center text-warning">{{ title }}</h1>
+  <h3 class="text-center text-primary">Componente Padre</h3>
+  <app-componente-hijo (notificationInput)="getNotification($event)"></app-componente-hijo>
+
+  @if (messageInput){
+  <p class="text-center mt-3 alert alert-info w-50 mx-auto">Mensaje 💌: {{ messageInput }}</p>
+  }
 </section>
